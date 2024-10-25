@@ -1,9 +1,9 @@
-import Home from "./components/propsexm/Home";
+import State from "./components/usestateexm/State";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
+    <div >
+      <State/>
     </div>
   );
 }
