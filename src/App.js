@@ -1,13 +1,12 @@
-
 import './App.css';
-import Effect from './components/EffectEx/Effect';
+import RefnLayout from './components/RefExandLayout/RefnLayout';
 
 
 function App() {
   return (
     <div >
 
-      <Effect />
+      <RefnLayout />
 
     </div>
   );
