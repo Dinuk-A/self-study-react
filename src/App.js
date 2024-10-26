@@ -1,9 +1,12 @@
-import State from "./components/usestateexm/State";
+import Reducer from "./components/UseReducerEx/Reducer";
+import './App.css';
 
 function App() {
   return (
     <div >
-      <State/>
+
+      <Reducer />
+
     </div>
   );
 }
