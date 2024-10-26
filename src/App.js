@@ -1,15 +1,18 @@
 import './App.css';
-// import Child from './components/ImparativeHandleEx/Child';
-import ImpHand from './components/ImparativeHandleEx/ImpHand';
-
+import { ThemeProvider } from './components/ContextEx/ThemeContext';
+import ThemeDisplay from './components/ContextEx/ThemeDisplay';
+import ThemeToggle from './components/ContextEx/ThemeToggle';
 
 function App() {
   return (
-    <div >
-
-      <ImpHand />
-
-    </div>
+    <ThemeProvider>
+      <div >
+        <div style={{ padding: '20px' }}>
+          <ThemeDisplay />
+          <ThemeToggle />
+        </div>
+      </div>
+    </ThemeProvider>
   );
 }
 
