@@ -1,11 +1,13 @@
-import Reducer from "./components/UseReducerEx/Reducer";
+
 import './App.css';
+import Effect from './components/EffectEx/Effect';
+
 
 function App() {
   return (
     <div >
 
-      <Reducer />
+      <Effect />
 
     </div>
   );
