@@ -6,17 +6,18 @@ export const ThemeContext = createContext();
 
 // Create the provider
 export const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState("light")
+  const [theme, setTheme] = useState("light")
 
-    const toggleTheme = () => {
-        setTheme(prevTheme => (prevTheme === "light" ? "dark" : "light"));
-    };
+  const toggleTheme = () => {
+    setTheme(prevTheme => (prevTheme === "light" ? "dark" : "light"));
+  };
 
-    return (
-        <ThemeContext.Provider value={{ theme, toggleTheme }}>
-            {children}
-        </ThemeContext.Provider>
-    )
+  return (
+    //provides an object with two properties to children 
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  )
 }
 
 //app js should look like this>>>

@@ -11,7 +11,7 @@ const Effect = () => {
 
     }, [])
 
-    //this runs only when the given state changes
+    //this runs only when the given state or any values (not just state variables) changes (dependancy change)
     useEffect(() => {
         document.title = `Count : ${count} `;
     }, [count])
