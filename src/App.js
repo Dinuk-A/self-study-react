@@ -1,11 +1,13 @@
 import './App.css';
-import Callback from './components/CallbackEx/Callback';
+import TextCard from './components/PropsEx/SpecialChildrenProp/TextCard';
+import ImageCard from './components/PropsEx/SpecialChildrenProp/ImageCard';
 
 function App() {
-  return (
-    <>
-    <Callback/>
-    </>
+  return (   
+      <div >
+        <ImageCard></ImageCard>
+        
+      </div>    
   );
 }
 

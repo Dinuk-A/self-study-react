@@ -14,10 +14,13 @@ const State = () => {
     //to support increment
     function addOne() {
         setCount(count + 1);
+        //updater function "prevCount" defaultly given by react , any var with (prev + Var) or first letter of var
+        // setCount(prevCount => prevCount+1)
+        // setCount(c => c +1)
     }
 
     //for 2nd ex >>> real time update the typing text
-    function handleInputChange(e){
+    function handleInputChange(e) {
         setInputVal(e.target.value)
     }
 
