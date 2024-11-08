@@ -31,11 +31,14 @@ const App = () => {
   return (
     <BrowserRouter>
       <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
+        <Routes>          
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home />}
+
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/login" element={<Login />} />
+        
           <Route
             path="/profile"
             element={
